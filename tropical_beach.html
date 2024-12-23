@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Beach Getaways - NextGen Journeys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: orange;
+            font-size: 1.1em;
+        }
+        .hero {
+            background-image: url(beach1.jpeg);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .cta-buttons a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-buttons a:hover {
+            background-color: #0056b3;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .tour-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .tour-details img {
+            width: 50%;
+            border-radius: 5px;
+        }
+        .tour-details .details {
+            width: 45%;
+            padding-left: 20px;
+        }
+        .tour-details h3 {
+            color: #007BFF;
+        }
+        .tour-details p {
+            line-height: 1.6;
+        }
+        .itinerary ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .itinerary li {
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NextGen Journeys</h1>
+    <p>Your adventure begins here</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#tour-packages">Tour Packages</a>
+    <a href="index.html#destinations">Destinations</a>
+    <a href="index.html#booking">Book Now</a>
+    <a href="index.html#contact">Contact Us</a>
+</nav>
+
+<div class="hero">
+    <h1 style="color: yellow; text-shadow: orangered 2px 2px;">Tropical Beach Getaways</h1>
+    <div class="cta-buttons" style="position: absolute; top: 300px;">
+        <a href="#booking">Book Your Spot</a>
+    </div>
+    
+</div>
+
+<section id="tour-details">
+    <div class="tour-details">
+        <img src="https://imgs.search.brave.com/MZJ3Rh6-84l52fdAbb9EePP-s8OJWzl2iT7IF0Gc1Nc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/dGhhaWxhbmQtYmVh/Y2guanBnP3dpZHRo/PTEwMDAmZm9ybWF0/PXBqcGcmZXhpZj0w/JmlwdGM9MA" alt="Tropical Beach Getaway" style="height: 450px; width: auto;">
+        <div class="details">
+            <h3>7 Days Exploring the Best Beaches Around the World</h3>
+            <p>Join us for a luxurious 7-day beach adventure where you’ll visit some of the world’s most pristine tropical beaches. From the golden sands of the Maldives to the crystal-clear waters of the Caribbean, this getaway promises relaxation and unforgettable experiences.</p>
+            <h4>Package Includes:</h4>
+            <ul>
+                <li>7 days of guided beach exploration</li>
+                <li>Exclusive beach resorts and accommodations</li>
+                <li>Daily breakfast and beachside dinners</li>
+                <li>Guided activities like snorkeling, island tours, and sunset cruises</li>
+                <li>Airport transfers and all transportation during the tour</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="itinerary">
+    <h2>Itinerary</h2>
+    <div class="itinerary">
+        <h3>Day 1: Arrival at the Paradise Beach Resort</h3>
+        <p>Arrive at your luxurious beach resort and spend the day unwinding by the beach. Enjoy a welcome dinner and sunset views.</p>
+
+        <h3>Day 2: Explore the Tropical Islands</h3>
+        <p>Take a guided boat tour to nearby tropical islands. Snorkel in the clear blue waters and enjoy a picnic on a secluded beach.</p>
+
+        <h3>Day 3-5: Water Sports & Relaxation</h3>
+        <p>Choose from various water activities including kayaking, jet-skiing, and deep-sea fishing. Alternatively, indulge in spa treatments and beachside lounging.</p>
+
+        <h3>Day 6: Sunset Cruise</h3>
+        <p>Take a relaxing sunset cruise along the coastline, with drinks and snacks served on board.</p>
+
+        <h3>Day 7: Departure</h3>
+        <p>After a final breakfast by the beach, transfer to the airport for your return journey home.</p>
+    </div>
+</section>
+
+<section id="booking">
+    <h2>Book Your Tropical Beach Getaway</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" value="Tropical Beach Getaways" required><br><br>
+        <label for="dates">Travel Dates:</label>
+        <input type="date" id="dates" name="dates" required><br><br>
+        <input type="submit" value="Book Now">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 NextGen Journeys</p>
+    <p>Follow us on social media: 
+        <a href="#" style="text-decoration: none; color: rgb(18, 249, 241);">Facebook</a> | <a href="#" style="text-decoration: none; color: rgb(18, 249, 241);">Instagram</a> | <a href="#" style="text-decoration: none; color: rgb(18, 249, 241);">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>

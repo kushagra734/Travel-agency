@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Journeys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: orange;
+            font-size: 1.1em;
+        }
+        .hero {
+            background-image: url('bg .jpg'); 
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .cta-buttons a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-buttons a:hover {
+            background-color: #0056b3;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .tour-package {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+        .tour-package img {
+            width: 30%;
+            border-radius: 5px;
+        }
+        .tour-package .details {
+            width: 65%;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NextGen Journeys</h1>
+    <p>Your adventure begins here</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    
+    <a href="#tour-packages">Tour Packages</a>
+    <a href="#destinations">Destinations</a>
+    
+    <a href="#booking">Book Now</a>
+    
+    <a href="#contact">Contact Us</a>
+</nav>
+
+
+<div class="hero">
+    <h1>Explore the World</h1>
+    
+</div>
+
+
+<section id="tour-packages">
+   <center> <h2>Our Popular Tour Packages</h2></center> 
+    <div class="tour-package">
+        <a href="tropical_beach.html"  ><img src="tropical1.jpg" alt="Package 1" style="height: 250px; width: 400px;"></a>
+        <div class="details">
+            <h3>Tropical Beach Getaways</h3>
+            <p>7 days exploring the best beaches around the world.</p>
+            
+        </div>
+    </div>
+    <div class="tour-package">
+        <a href="mountains.html"  ><img src="alps.jpg" alt="Package 2" alt="Package 1" style="height: 250px; width: 400px;"></a>
+        
+        <div class="details">
+            <h3>Mountain Adventures in the Alps</h3>
+            <p>Experience the grandeur of the Swiss Alps in a 5-day tour.</p>
+            
+        </div>
+    </div>
+    <div class="tour-package">
+        <a href="european.html"  ><img src="europeangrandtour.jpg" alt="Package 3" style="height: 250px; width: 400px;"></a>
+        
+        <div class="details">
+            <h3>European Grand Tour</h3>
+            <p>Explore 5 iconic European cities in 10 days.</p>
+           
+        </div>
+    </div>
+</section>
+
+
+<section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="tour-package">
+        <img src="eiffel-tower.jpg" alt="Paris">
+        <div class="details">
+            <h3>Paris</h3>
+            <p>Explore the romance of the City of Lights.</p>
+        </div>
+    </div>
+    <div class="tour-package">
+        <img src="kyoto.jpg" alt="Kyoto">
+        <div class="details">
+            <h3>Kyoto</h3>
+            <p>Discover ancient temples and serene gardens in Kyoto.</p>
+        </div>
+    </div>
+</section>
+
+<center>
+<section id="booking" >
+    <h2>Book Your Next Adventure</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+        <label for="dates">Travel Dates:</label>
+        <input type="date" id="dates" name="dates" required><br><br>
+        <input type="submit" value="Book Now" onclick="button1()">
+    </form>
+</section>
+
+<center>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <input type="submit" value="Send Message" onclick="button2()">
+    </form>
+</section>
+</center>
+
+<footer>
+    <p>&copy; 2024 NextGen Journeys
+        
+    </p>
+    <p>Follow us on social media: 
+        <a href="#" style="text-decoration: none; color: rgb(18, 249, 241);">Facebook</a> | <a href="#" style="text-decoration: none; color: rgb(18, 249, 241);">Instagram</a> | <a href="#" style="text-decoration: none; color: rgb(18, 249, 241);">Twitter</a>
+    </p>
+</footer>
+
+<script>
+    function button1(){
+        window.alert("Have a nice journey 😊");
+    }
+
+    function button2(){
+        window.alert("We  will surely get back at you 🫡");
+    }
+</script>
+
+</body>
+</html>
